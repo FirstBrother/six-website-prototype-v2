@@ -311,8 +311,9 @@ h3 { font-size: 1.35rem; }
 
 /* ---------- Visit ---------- */
 .visit-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 3rem; align-items: start; }
-.venue-photo { border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); margin: 1.5rem 0; }
-.venue-photo img { width: 100%; height: auto; aspect-ratio: 16/9; object-fit: cover; }
+.venue-photo { border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); margin: 1.5rem 0; background: #f6f3ec; padding: clamp(1.5rem, 4vw, 2.5rem); }
+.venue-photo img { width: 100%; height: auto; display: block; object-fit: contain; }
+.venue-photo figcaption { margin-top: 1rem; font-size: 0.85rem; color: #5c564a; text-align: center; }
 .venue-address { font-style: normal; margin-bottom: 1.2rem; }
 .venue-address strong { display: block; font-family: var(--display); font-size: 1.3rem; }
 .venue-address span { display: block; color: var(--muted); }
